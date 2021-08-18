@@ -1,0 +1,120 @@
+@font-face{
+    font-family: "Avenir Roman";
+    src: url(/avenir-roman.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Avenir Roman", sans-serif;
+    background: url(/img/bg.jpg) no-repeat top center; 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.enter {
+    background: #0063e5;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 7px 10px ;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.enter:hover{
+    background: #0483ee;
+}
+
+.logo{
+    max-width: 160px;
+    margin-bottom: 30px;
+}
+
+.hero-content{
+    padding-left: 40px;
+}
+.hero-content > p{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(192, 192, 192, 0.8);
+    margin-top: 16px;
+}
+
+h1 {   
+    font-size: 43px;
+    line-height: 53px;
+    color: #f9f9f9;
+    margin-bottom: 30px;
+}
+
+.precos-container{
+    display: flex;
+}
+
+.preco span {
+    font-weight: 700;
+    color: #f9f9f9;
+    font-size: 30px;
+    line-height: 36px
+}
+
+.preco{
+    width: 300px;
+    max-width: 100%;
+    color: rgba(192, 192, 192, 0.8);
+}
+.preco:first-child{
+    display: grid;
+}
+
+.preco:first-child a{
+    align-self: flex-end;
+}
+
+.preco a{
+    background: #0063e5;
+    display: block;    
+    border-radius: 4px;
+    
+    color: #f9f9f9;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 16.5px 14px ;
+    transition: 0.2s ease;
+   }
+.preco a:hover{
+    background: #0483ee;
+}
+
+.preco p:first-child{
+    margin: 0;
+}
+
+.preco p{
+    margin: 16px 0px;
+}
+
+.preco + .preco{
+    margin-left: 32px;
+
+}
+
+.footer{
+    max-width: 600px;
+    position:absolute;
+    bottom: 15px;
+}
